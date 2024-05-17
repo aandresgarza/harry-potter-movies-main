@@ -4,12 +4,13 @@ import { ActivatedRoute, ActivatedRouteSnapshot, RouterModule } from '@angular/r
 import { Movie } from '../../shared/models/list-movies.model';
 import { CommonModule } from '@angular/common';
 import { DurationFormatPipe } from '../../shared/pipes/duration-format.pipe';
+import { CurrencyFormatPipe } from '../../shared/pipes/currency-format.pipe';
 
 
 @Component({
   selector: 'app-detail-movies',
   standalone: true,
-  imports: [RouterModule, CommonModule, DurationFormatPipe],
+  imports: [RouterModule, CommonModule, DurationFormatPipe, CurrencyFormatPipe],
   templateUrl: './detail-movies.component.html',
   styleUrl: './detail-movies.component.css'
 })

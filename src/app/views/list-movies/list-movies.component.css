@@ -12,6 +12,9 @@
     gap: 20px;
     flex-wrap: wrap;
 }
+.movie-list .container small{
+    margin-right:20px;
+}
 .movie-list .title{
     margin-bottom: 0;
     font-weight: 500;

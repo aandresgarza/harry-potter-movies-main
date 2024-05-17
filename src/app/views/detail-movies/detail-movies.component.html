@@ -7,17 +7,16 @@
                 <img src="{{movieSelected.poster}}">
                 <p><strong>Summary: </strong>{{movieSelected.summary}}</p>
             </div>
-
         </div>
         <h3>Details</h3>
         <section class="info">
             <div>
                 <span>Box office</span>
-                <span>{{movieSelected.box_office}}</span>
+                <span>{{movieSelected.box_office | currencyFormat}}</span>
             </div>
             <div>
                 <span>Budget</span>
-                <span>{{movieSelected.budget}}</span>
+                <span>{{movieSelected.budget  | currencyFormat}}</span>
             </div>
             <div>
                 <span>Duration</span>

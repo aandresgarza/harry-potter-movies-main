@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { FilterMoviesComponent } from './filter-movies/filter-movies.component';
 import { DurationFormatPipe } from '../../shared/pipes/duration-format.pipe';
+import { CurrencyFormatPipe } from '../../shared/pipes/currency-format.pipe';
 
 @Component({
   selector: 'app-list-movies',
   standalone: true,
-  imports: [HttpClientModule, CommonModule, RouterLink, FilterMoviesComponent, DurationFormatPipe],
+  imports: [HttpClientModule, CommonModule, RouterLink, FilterMoviesComponent, DurationFormatPipe, CurrencyFormatPipe],
   templateUrl: './list-movies.component.html',
   styleUrl: './list-movies.component.css'
 })
