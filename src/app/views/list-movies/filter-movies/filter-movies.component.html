@@ -1,0 +1,7 @@
+<div class="filters">
+<h4>Filters</h4>
+    <label for="title"> Title</label>
+    <input id="title" type="text" [(ngModel)]="title" (ngModelChange)="emitFilters()">
+    <label for="release"> Release year</label>
+    <input id="release" type="number" [(ngModel)]="release" (ngModelChange)="emitFilters()">
+</div>

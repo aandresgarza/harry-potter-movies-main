@@ -1,0 +1,28 @@
+.wrap{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.movie-list{
+    justify-content: space-between;
+}
+.movie-list .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.movie-list .title{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.movie-list button{
+    border: 0;
+    background: #dee2e7;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.movie-list button:hover{
+    background: #d3d7db;
+}

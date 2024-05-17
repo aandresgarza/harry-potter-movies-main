@@ -1,1 +1,14 @@
-<p>list-movies works!</p>
+<main class="wrap">
+    <app-filter-movies (filtersMovies)="applyFilters($event)"></app-filter-movies>
+<ul>
+    <li *ngFor="let movie of showMovies" class="movie-list">
+        <div class="container">
+        <div>
+            <h2 class="title">{{movie.title}}</h2>
+            <small>Release date: {{movie.release_date}} </small> <small>Budget: ${{movie.budget}} millon </small> <small>Duration: {{movie.duration | durationFormat}} </small>
+        </div> 
+        <button [routerLink]="['/movies', movie.id]">Details</button>
+    </div>
+    </li>
+</ul>
+</main>
