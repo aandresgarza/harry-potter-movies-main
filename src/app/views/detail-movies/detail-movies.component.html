@@ -1,1 +1,39 @@
-<p>detail-movies works!</p>
+<div class="detail">
+    <button [routerLink]="['/']">&#9750; Back</button>
+    <ng-container *ngIf="movieSelected; else noMovie">
+        <div class="header">
+            <h2>{{movieSelected.title}}</h2>
+            <div class="summary">
+                <img src="{{movieSelected.poster}}">
+                <p><strong>Summary: </strong>{{movieSelected.summary}}</p>
+            </div>
+
+        </div>
+        <h3>Details</h3>
+        <section class="info">
+            <div>
+                <span>Box office</span>
+                <span>{{movieSelected.box_office}}</span>
+            </div>
+            <div>
+                <span>Budget</span>
+                <span>{{movieSelected.budget}}</span>
+            </div>
+            <div>
+                <span>Duration</span>
+                <span>{{movieSelected.duration | durationFormat}}</span>
+            </div>
+            <div>
+                <span>Producers</span>
+                <span>{{movieSelected.producers}}</span>
+            </div>
+            <div>
+                <span>Cinematographers</span>
+                <span>{{movieSelected.cinematographers}}</span>
+            </div>
+        </section>
+    </ng-container>
+    <ng-template #noMovie>
+        <h3>The movie doesn't exist</h3>
+    </ng-template>
+</div>

@@ -1,0 +1,66 @@
+.detail {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail .info {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+.detail .summary {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.detail .summary p {
+    margin-top: 0;
+}
+
+.detail .summary img {
+    width: 120px;
+}
+
+.detail h2 {
+    font-weight: 400;
+}
+
+.detail h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.detail button {
+    border: 0;
+    background: #dee2e7;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail .info > div {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.detail .info > div:last-of-type {
+    border-bottom: 0;
+}
+
+.detail .info > div > span:first-child {
+    padding: 20px;
+    font-weight: bold;
+    background-color: #dadee3;
+    min-width: 140px;
+    text-align: right;
+    border-right: 1px solid #000;
+}
+
+.detail .info > div > span {
+    padding: 20px;
+}

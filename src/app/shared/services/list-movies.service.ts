@@ -9,8 +9,12 @@ import { Movie } from '../models/list-movies.model';
 export class ListMoviesService {
 
   constructor(private http: HttpClient) {}
+
   getListMovies():Observable<Movie[]>{
     return this.http.get<Movie[]>('/movies')
+  }
 
+  getDetailMovie(idMovie:string | null):Observable<Movie>{
+    return this.http.get<Movie>('/movies/' + idMovie)
   }
 }
